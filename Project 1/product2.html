@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUMPKIN: The Best Choice</title>
+    <link rel="stylesheet" href="./product.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./resources/x_logo_new.png">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="./style000.css">
+</head>
+
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.header_bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    background-color:#f96a0a;
+
+}
+.header_element {
+    height: 30px;
+    width: 100px;
+    margin-right: 25px;
+    margin-top: 7px;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#language {
+    background-color: #f96a0a;
+    color: white;
+    font-family: monospace;
+    border: white solid 1px;
+    border-radius: 5px;
+}
+.option_language {
+    background-color: white;
+    color: #f96a0a;
+}
+.header_element_text  {
+    text-decoration: none;
+    color: white ;
+}
+.header_element_text:hover{
+    color: #F39F5A;
+}
+.navbar{
+    background-color: white;
+
+
+}
+.menu{
+    background-color: #002341;
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+.menu_element {
+    margin-left: 110px;
+    align-items: end;
+}
+
+.menu_text {
+    text-decoration: none;
+    color: white    ;
+    font-family:'Playfair Display', serif;
+    font-size: larger;
+}  
+.menu_text:hover{
+    color: #F39F5A;
+    transition: 0.5s ;
+}
+.menu_logo {
+    border: none;
+    margin-top: 4px;
+    margin-left: 30px;
+}
+.searchbar_big {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-top: 3px;
+}
+.searchbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.content {
+    min-height: 1000px;
+}
+
+.section1 {
+    display: flex;
+}
+
+#slide-show {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.slide {
+    width: 98.9vw;
+    height: 450px;
+}
+#next {
+    justify-content: center;
+    border: none;
+    font-size: x-large;
+    background-color:transparent;
+    
+}
+.product_page {
+    background-color:white;
+    min-height: 1000px;
+    display: flex;
+}
+.product_photos {
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.product_photos_big {
+    height: 550px;
+    width: 500px;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-right: 25px;
+    border: black solid;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product_photos_small {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-right: 50px;
+    align-items: center;
+    justify-content: center;
+    /* border: #f96a0a solid; */
+}
+.p1 {
+    border: black solid;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    
+}
+.a123 {
+    font-size: 70px;
+}
+.product_des {
+    height: 1000px;
+    width: 1400px;
+}
+.a456 {
+    margin: 15px;
+    
+}
+.product_detail {
+    height: 560px;
+    width: 800px;
+    margin-top: 50px;
+    margin-left: 35px;
+    border-radius: 10px;
+    background-color: gainsboro;
+}
+.recommend {
+    background-color:#f96a0a;
+    color: white;
+    display: inline;
+    margin-left: 15px;
+    visibility: hidden;
+    
+}
+.all_squares {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+.websites_square {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+.a789 {
+    margin-top: 15px;
+}
+.price {
+    font-family: monospace;
+    color: crimson;
+    margin-top: 10px;
+    /* margin-bottom: px; */
+}
+.goto_btn {
+    text-decoration: none;
+    background-color:#002341;
+    border-radius: 5px;
+    width: 50px;
+    color:#f96a0a;
+    font-family: monospace;
+    text-align: center;
+    font-size: larger;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+h1,h2,h3,h4,h5,p {
+    font-family: 'Space Mono', monospace;
+}
+.description {
+    margin-left: 15px;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: column wrap;
+
+}
+.event_des1{
+    font-family: monospace;
+    font-size: larger;
+    margin-top: 5px;
+    color: crimson;
+}
+</style>
+<body>
+<div class="container">
+  <!-- Header -->
+  <header class="header_bar">
+
+    <div class="header_element">
+        
+        <select name="language" id="language">
+            <option class="option_language" value="1"><a href="./malfunction.html" class="header_element_text">Vietnamese</a></option>
+            <option class="option_language" value="2"><a href="./malfunction.html" class="header_element_text">English</a></option> 
+        </select>
+
+    </div>
+
+    <div class="header_element">
+        <a href="./malfunction.html" class="header_element_text">Favourites</a>
+    </div>
+
+    <div class="header_element">
+        <a href="./malfunction.html" class="header_element_text">Voucher</a>
+    </div>
+
+    <div class="header_element">
+        <a href="#help" class="header_element_text">Contact</a>
+    </div>
+
+    <div class="header_element">
+        <a href="#" class="header_element_text"> Duc Huy   </a>
+        <svg style="margin-left: 5px;" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/></svg>            
+    </div>
+
+</header>
+<!-- Header -->
+
+
+
+
+<!-- Navigaton Bar -->
+<div class="navbar">
+
+    <div class="menu">
+
+        <div class="menu_logo">
+            <a href="./index0.html"><img src="./resources/fulll_logo.png" alt="#" style="height: 125px; width: 125px ;"></a>
+        </div>
+
+        <div class="menu_element">
+            <a href="#111" class="menu_text">Men's</a>
+        </div>
+
+        <div class="menu_element">
+            <a href="#222" class="menu_text">Women's</a>
+        </div>
+
+        <div class="menu_element">
+            <a href="#333" class="menu_text">Kids'</a>
+        </div>
+
+        <div class="menu_element">
+            <a href="#444" class="menu_text">Accessory</a>
+        </div>
+
+        <div class="menu_element">
+            <a href="#555" class="menu_text">Event</a>
+        </div>
+
+        <div class="menu_element">
+            <a href="./malfunction.html" class="menu_text">Filter</a>
+        </div>
+
+        <div class="searchbar_big">
+            <div class="searchbar">
+                <a href="./searchbar.html"><img src="./resources/eye.gif" class="menu_img" style="height: 100px;width: 100px ;"></a>
+            </div>
+
+
+        </div>
+
+    </div>
+     
+
+</div>
+<!-- Navigaton Bar -->
+
+
+
+    <!-- Product_page -->
+    <div class="product_page">
+
+        <div class="product_photos">
+
+            <div class="product_photos_big">
+                <img class="photos1" src="./resources/e1.jfif" style="height: 530px; width: 480px;" alt="">
+
+            </div>
+
+
+        </div>
+
+        <div class="product_des">
+
+            <div class="product_detail">
+                <div class="a456">
+                    <h1 style="margin-top: 10px;">Dead by Daylight - The Midnight Grove</h1>
+
+
+                    <div class="product_rating" style="margin-top: 10px;margin-left: -2px;">
+                        <img src="./resources/pumpkin.png" alt="#" style="height: 25px; width: 25px;">
+                        <img src="./resources/pumpkin.png" alt="#" style="height: 25px; width: 25px;">
+                        <img src="./resources/pumpkin.png" alt="#" style="height: 25px; width: 25px;">
+                        <img src="./resources/pumpkin.png" alt="#" style="height: 25px; width: 25px;">
+                        <img src="./resources/pumpkin.png" alt="#" style="height: 25px; width: 25px;">
+                    </div>
+                    
+                </div>
+
+                    <div class="recommend"> Best</div>
+
+                <div class="description">
+                    <h3 class="event_des1">20:00   30.10.2023    <a href="https://www.google.com/maps/place/Oswaldtwistle,+V%C6%B0%C6%A1ng+Qu%E1%BB%91c+Anh/@53.7334411,-2.4411001,13z/data=!3m1!4b1!4m6!3m5!1s0x487b98b46dc521d9:0x473fdd6fc22f5523!8m2!3d53.742244!4d-2.406538!16zL20vMDNjMWtm?hl=vi-VN&entry=ttu">666 Manchester B. , Oswald </a></h3>
+
+                    <p style="margin-top: 15px;"> 	The Midnight Grove is where you learn the Jhebbal sag religion path, the sixth and final religion in Conan Exiles. You have to traverse a labyrinthian maze, facing down many dangers along your path before you make it to the end and discover the final challenge: Jhebbal Sag’s champion.</p>
+
+                </div>
+
+                <div class="product_photos_small">
+
+                    <div class="p1"><img src="./resources/r1.jfif" style="height: 200px; width: 200px;" alt=""></div>
+                    <div class="p1"><img src="./resources/r2.jfif" style="height: 200px; width: 200px;" alt=""></div>
+                    <div class="p1"><img src="./resources/r3.jpeg" style="height: 200px; width: 200px;" alt=""></div>
+
+                    
+                </div>
+
+            </div>
+
+        </div>
+        
+    </div>
+    <!-- Content -->
+
+    
+
+
+
+
+    <!-- Contact -->
+    <div class="contact" id="help">
+
+        <div class="contact-text">
+            <h1 class="contact-header">CONTACT</h1>
+        </div>
+
+        <div class="contact-form">
+
+            <div class="contact-detail">
+
+                <div class="contact-detail-line">
+                    <img src="./resources/img/pin.png" alt="" class="contact-detail-img">
+                    <p>Da Nang, Vietnam</p>
+                </div>
+
+                <div class="contact-detail-line">
+                    <img src="./resources/img/phone-call.png" alt="" class="contact-detail-img">
+                    <p> Phone: +00 151515</p>
+                </div>
+                
+                <div class="contact-detail-line">
+                    <img src="resources/img/email.png" alt="" class="contact-detail-img">
+                    <p>  Email: pumpkin@inc.com </p>
+                </div>
+
+            </div>
+
+            <div class="contact-input">
+                <div class="contact-input-box-1">
+                    <input type="text" class="input_box" placeholder="Name">
+                    <input type="text" class="input_box" placeholder="Email">
+                </div>
+                <div class="contact-input-box-2">
+                    <input type="text" class="input_box_1" placeholder="Message">
+                </div>
+                <div class="contact-btn">
+                    <div class="btn-div"><button class="contact-btn-item">SEND</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact -->
+
+
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer_container">
+
+            <div class="footer_block1">
+                <h1>About</h1>
+                <br>
+                <p>If you want to arrange a party, you won’t remain indifferent to our Halloween-themed handouts and tableware. 
+                    To treat your guests, order our creepy yet tasty
+                     sweets such as gummy eyeballs, earthworm candies, and monster lollipops.
+                      So, rely on us to organize the best Halloween celebrations in the neighborhood!
+                    </p>
+            </div>
+
+            <div class="footer_block2">
+                <h1>Information</h1> <br>
+                <p>About Us <br>
+
+                    Delivery Information <br>
+                    
+                    Privacy Policy <br>
+                    
+                    Terms & Conditions <br>
+                    
+                    Contact Us <br>
+                    
+                    Blog
+                </p>
+            </div>
+
+            <div class="footer_block3">
+                <h1>SIGN UP FOR OUR NEWSLETTER:</h1> <br>
+                <p>Get all the latest information on Events, Sales and Offers. <br> Sign up for newsletter today.</p> <br>
+                <input type="text" name="" id="newsletter" placeholder="Enter your e-mail address *"> <br>
+                <a href="#" id="newsletter_btn" >Get</a>
+            </div>
+
+
+        </div>
+
+    </footer>
+    <!-- Footer -->
+
+
+
+
+    <!-- Media -->
+    <div class="icon">
+        <a href="https://www.facebook.com/mindxschool?locale=vi_VN"><div><img src="resources/img/facebook.png" alt="" class="icon-img"></div></a>
+        <a href="./index0.html"><div><img src="resources/img/instagram.png" alt="" class="icon-img"></div></a>
+        <a href="./index0.html"><div><img src="resources/img/snapchat.png" alt="" class="icon-img"></div></a>
+        <a href="./index0.html"><div><img src="resources/img/pinterest.png" alt="" class="icon-img"></div></a>
+        <a href="./index0.html"><div><img src="resources/img/twitter-sign.png" alt="" class="icon-img"></div></a>
+        <a href="./index0.html"><div><img src="resources/img/linkedin.png" alt="" class="icon-img"></div></a>
+    </div>
+    <!-- Media -->
+
+
+    </div>
+    <!-- Product_page -->
+
+</div>   
+</body>
+</html>
